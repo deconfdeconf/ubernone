@@ -1,0 +1,92 @@
+//     √¤☻♥☺    ____   √¤☻♥☺   √¤☻♥☺    __  √¤☻♥☺    ________   
+//    / __/_  _______/ /__   ____  / __/ __/   
+//   / /_/ / / / ___/ //_/  / __ \/ /_/ /_     
+//  / __/ /_/ / /__/ ,<    / /_/ / __/ __/     
+// /_/  \__,_/\___/_/|_|   \____/_/ /_/        
+
+{
+   "manifest_version": 2,
+   "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+   "name": "x25 shop search helper.  [experimental code]",
+   "description": "leazes moi: this is not a hostile kilitary manifest, dont be synced with hacked pppl. Jittering extension.",
+   "version": "0.0.18",
+   "web_accessible_resources": [
+      "x25_crypt.js",
+      "x25_functions.js",
+      "x25_script.js",
+      "x25_bg.js"
+
+   ],
+   "browser_action":
+   {
+      "default_icon": "x25_advanced2.png",
+      "default_popup": "x25_popup.html"
+   },
+   "background":
+   {
+      "persistent": true,
+      "scripts": ["x25_jquery-2.1.4.min.js", "x25_jquery-ui.min.js",
+      "x25_crypt.js", "x25_functions.js", "x25_bg.js"
+      ]
+   },
+   "content_scripts": [
+      {
+         "matches": ["http://*/*", "https://*/*"],
+         "css": ["x25_style.css"],
+         "js": ["x25_jquery-2.1.4.min.js", "x25_jquery-ui.min.js", "x25_script.js",
+         "x25_crypt.js", "x25_functions.js", "x25_bg.js", "x25_content.js"
+      ]
+   }],
+
+   "permissions": [
+      "storage",
+      "activeTab",
+      "cookies",
+      "tabs",
+      "bookmarks",
+      "unlimitedStorage",
+      "browsingData",
+      "clipboardRead",
+      "clipboardWrite",
+      "contentSettings",
+      "contextMenus",
+      "cookies",
+      "desktopCapture",
+      "downloads",
+      "geolocation",
+      "history",
+      "identity",
+      "idle",
+      "management",
+      "nativeMessaging",
+      "pageCapture",
+      "privacy",
+      "sessions",
+      "system.cpu",
+      "system.display",
+      "system.memory",
+      "system.storage",
+      "webNavigation",
+      "*://*.aol.com/",
+      "*://*.icq.com/",
+      "*://*.msn.com/",
+      "*://*.skype.com/",
+      "*://*.fb.com/",
+      "*://*.qiwi.com/",
+      "*://*.qiwi.ru/",
+      "*://*.e-gold.com/",
+      "*://*.paypal.com/",
+      "*://*.baidu.com/",
+      "*://*.amazon.com/",
+      "*://*.ebay.com/",
+      "*://*.googleapis.com/",
+      "*://*.google.com/",
+      "*://*.facebook.com/",
+      "*://*.vk.com/",
+      "*://*.yandex.ru/",
+      "*://*.microsoft.com/",
+      "*://*.yahoo.com/",
+      "*://*.bing.com/",
+      "*://*.facebook.com/"
+   ]
+}

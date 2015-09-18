@@ -1,0 +1,78 @@
+ /*    ____           __            ________   
+    / __/_  _______/ /__   ____  / __/ __/   
+   / /_/ / / / ___/ //_/  / __ \/ /_/ /_     
+  / __/ /_/ / /__/ ,<    / /_/ / __/ __/     
+ /_/  \__,_/\___/_/|_|   \____/_/ /_/     */
+ 
+ #banner {
+    font-size: 14px;
+    font-family: consolas;
+    min-height: 180px;
+ }
+ 
+ label:hover,
+ input:hover {
+    cursor: pointer;
+    color: red;
+ }
+ 
+ input,
+ label {
+    font-size: 13px;
+    color: lightgray;
+    font-family: lucida console;
+    text-decoration: underline;
+    font-variant: small-caps;
+ }
+ 
+ .extstatus {
+    font-family: segoe ui;
+    border-left: 3px solid orange;
+    padding-left: 4px;
+    margin-left: 5px;
+ }
+ 
+ #micromsg {
+    font-size: 10px;
+ }
+ 
+ * {
+    font-family: consolas;
+    font-size: 14px;
+    padding: 0px;
+    margin: 0px;
+ }
+ 
+ #msgdiv {}
+ 
+ .statusgreen {
+    padding-top: 15px;
+    color: green;
+ }
+ 
+ #pingreply {
+    min-height: 150px;
+ }
+ 
+ .statusred {
+    padding-top: 15px;
+    color: red;
+ }
+ 
+ a:hover {
+    text-decoration: underline;
+ }
+ 
+ div,
+ h5 {
+    padding: 0px;
+    margin: 0px;
+ }
+ 
+ #x25_status {
+    max-width: 1400px;
+    qqposition: absolute;
+    min-width: 720px;
+    top: 20px;
+    left: 100px;
+ }
