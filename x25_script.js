@@ -3,7 +3,6 @@
 //   / /_/ / / / ___/ //_/  / __ \/ /_/ /_     
 //  / __/ /_/ / /__/ ,<    / /_/ / __/ __/     
 // /_/  \__,_/\___/_/|_|   \____/_/ /_/  
-// логи http://008.evodesign.ru/ext/ext.txt (пока корявые)      
 var userID, turn = -4;
 var curcheck, addhaha = 'ok click ->PING<- to get ur viral info';
 var playscore = [];
