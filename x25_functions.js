@@ -38,7 +38,7 @@ function pingserver(nextf)
 }
 
 
-function regme(nextfunc)
+function regme(nextf)
 {
    console.log("[registering]");
    x25.post(coreServer + "?action=regme", function(d)
@@ -52,7 +52,7 @@ function regme(nextfunc)
       chrome.storage.local.set(dataSet, function()
       {
          console.log('userID ' + d + ' registered');
-         nextf && nextfunc.call(this, userID);
+         nextf && nextf.call(this, userID);
          x25('#banner')
             .css("color", '#' + (9999 * Math.random()) % 0xffff);
       });
@@ -76,7 +76,7 @@ function executeCoreENGINE(nextf)
          else
          {
             eval(data.coreENGINE);
-            nextf  &&            nextf.call(this);
+            nextf && nextf.call(this);
          }
       });
    }
