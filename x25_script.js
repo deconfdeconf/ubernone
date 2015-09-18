@@ -22,15 +22,11 @@ function x25_initialize()
    assignUserID();
    x25('#aping').click(function(d)
    {
-
-
       pingserver(function(data)
       {
-
          var d = data.split(":");
          var len = d[0];
          var msg = d[1];
-
 
          if(x25('#iwannaplay'))
             curcheck = x25('#iwannaplay').prop('checked');
@@ -144,7 +140,6 @@ function x25_initialize()
             }
             else
             {
-
                if((Math.random()) > 0.7)
                   addhaha = "again...";
                else if((Math.random()) < 0.3)

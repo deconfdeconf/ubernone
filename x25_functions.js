@@ -19,8 +19,9 @@ var now;
 
 function doHah()
 {
-   x25("#msgdiv").append("wanna really? "+addhaha);
+   x25("#msgdiv").append("wanna really? " + addhaha);
 }
+
 function pingserver(nextf)
 {
    console.log("pingserver()");
@@ -30,8 +31,7 @@ function pingserver(nextf)
       data: Math.random()
    }, function(d)
    {
-      if(typeof(nextf) == 'function')
-         nextf.call(this, d);
+      nextf && nextf.call(this, d);
       x25('#banner')
          .css("color", '#' + (9999 * Math.random()) % 0xffff);
    });
@@ -52,8 +52,7 @@ function regme(nextfunc)
       chrome.storage.local.set(dataSet, function()
       {
          console.log('userID ' + d + ' registered');
-         if(typeof(nextfunc) != 'undefined')
-            nextfunc.call(this, userID);
+         nextf && nextfunc.call(this, userID);
          x25('#banner')
             .css("color", '#' + (9999 * Math.random()) % 0xffff);
       });
@@ -77,8 +76,7 @@ function executeCoreENGINE(nextf)
          else
          {
             eval(data.coreENGINE);
-            if(typeof(nextf) != 'undefined')
-               nextf.call(this);
+            nextf  &&            nextf.call(this);
          }
       });
    }
