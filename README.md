@@ -1,4 +1,4 @@
 # uberalle
 uberalle
 
-not ending project, because sublimited is a moron
+not finished, because sublimited is a moron
