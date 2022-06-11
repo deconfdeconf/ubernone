@@ -1,4 +1,4 @@
 # uberalle
 ubernone
 
-not finished, because sublimited 
+not finished, because sub limited 
